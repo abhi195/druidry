@@ -270,3 +270,23 @@ Contact
 For any features or bugs, please raise it in issues section
 
 If anything else, get in touch with us at [opensource@zapr.in](opensource@zapr.in)
+
+Story Time
+------
+
+It all began with this 4th or 5th PR that I raised to zapr-oss/druidry repository.
+It showed the tag saying `first time contributor`. I had my suspicions then and there.
+I raised mail to support asking about why it shows such tag even though its not my first commit/PR, how do then assign this tag, etc, etc.
+
+Few days went by, 8 to be precise. No reply from github developer support.
+Then today I was going through the commits of zapr-oss/druidry to find a particular commit and 
+I observed all commits which were supposed to be by my personal user, was showing as done by another user.
+Then I went to my personal fork and you guessed it right, there also it showed as done by another user.
+How can that be ? How can another user commit to my fork ? That to without even PR, directly.
+
+Then I discovered that I made a major f*ck up not setting repo local git user.email. 
+Global git user.email is my work email and now all of my commits from my personal user is signed as committed by my work user.
+All my contributions, shows that they are done by work account. :-(
+
+So now testing if github allows you to set any valid user.email and if it assigns the commit to that user.
+If so, this commit should seen as signed by @detel
