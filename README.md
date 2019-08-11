@@ -290,3 +290,14 @@ All my contributions, shows that they are done by work account. :-(
 
 So now testing if github allows you to set any valid user.email and if it assigns the commit to that user.
 If so, this commit should seen as signed by @detel
+
+Update : It did exactly that. What the f*ck !!
+
+IMO this method of assigning commits to whatever email you provide in your git user.email config is wrong.
+May be this could be purely representational thing, may be internally commit-id still somehow points to my user. 
+But still it's wrong, it should not show it as committed by different user, even for representational purpose.
+I can give any email and once that commit is assigned to the desired user, 
+I can contribute to some repository and once my contributions are merged, 
+in that repository's history that particular commit will be shown as done by my desired user who doesn't event know he did that contribution. 
+They should assign commit to fork-owner/account/sshkey through which is comes from.
+Or at least they should check that @detel user, whom I have not given write access to my repo/fork, how is he/she able to write ? And raise some error.
